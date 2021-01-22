@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { RouterModule, Routes} from '@angular/router';
 import { FormsModule} from '@angular/forms';
+import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    SimpleSmoothScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

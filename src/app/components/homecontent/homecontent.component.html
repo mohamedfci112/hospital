@@ -1,0 +1,286 @@
+<section class="cars">
+    <div>
+      <mdb-carousel [isControls]="false" [animation]="'fade'">
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="../../../assets/img/a.jpg" alt="First slide">
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="../../../assets/img/b.jpg" alt="Second slide">
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="../../../assets/img/d.jpg" alt="Third slide">
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img class="d-block w-100" src="../../../assets/img/e.jpg" alt="Third slide">
+        </mdb-carousel-item>
+      </mdb-carousel>
+    </div>
+</section>
+
+<section class="text-center services" id="service">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12 serv-all-title">
+    <span>OUR <span class="serv-part-title">SERVICES</span></span>
+      </div>
+
+        <div class="col-md-4">
+          <!--Card-->
+          <mdb-card cascade="true" narrower="true">
+
+            <!--Card image-->
+            <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+              <mdb-card-img src="../../../assets/img/inpatient-care.jpg"></mdb-card-img>
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--/Card image-->
+
+            <mdb-card-body cascade="true" class="text-center">
+              <!--Card content-->
+              <h5 class="pink-text">
+                <mdb-icon fas icon="clinic-medical"></mdb-icon> Inpatient Care</h5>
+              <!--Title-->
+              <h4 class="card-title">Inpatient</h4>
+              <!--Text-->
+
+              <mdb-card-text>
+                Diagnosis and treatment of illnesses, injuries and some chronic conditions or diseases and Housing during these treatments and procedures and Management of childbirth.
+              </mdb-card-text>
+
+              <a mdbBtn color="unique" class="waves-light" mdbWavesEffect (click)="basicModal.show()">More</a>
+
+            </mdb-card-body>
+            <!--/.Card content-->
+
+          </mdb-card>
+          <!--/.Card-->
+        </div>
+
+        <div class="col-md-4">
+          <!--Card-->
+          <mdb-card cascade="true" narrower="true">
+
+            <!--Card image-->
+            <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+              <mdb-card-img src="../../../assets/img/outpatient-care.jpg"></mdb-card-img>
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--/Card image-->
+
+            <mdb-card-body cascade="true" class="text-center">
+              <!--Card content-->
+              <h5 class="pink-text">
+                <mdb-icon fas icon="clinic-medical"></mdb-icon> Outpatient Care</h5>
+              <!--Title-->
+              <h4 class="card-title">Outpatient</h4>
+              <!--Text-->
+
+              <mdb-card-text>
+                Surgical department services and facilities and Emergency room facilities and services and Diagnostic services such as x-ray, ultrasound and laboratory services and Wellness services.
+              </mdb-card-text>
+
+              <a mdbBtn color="unique" class="waves-light" mdbWavesEffect (click)="basicModal1.show()">More</a>
+
+            </mdb-card-body>
+            <!--/.Card content-->
+
+          </mdb-card>
+          <!--/.Card-->
+        </div>
+
+        <div class="col-md-4">
+          <!--Card-->
+          <mdb-card cascade="true" narrower="true">
+
+            <!--Card image-->
+            <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+              <mdb-card-img src="../../../assets/img/Corona-Care.jpg"></mdb-card-img>
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--/Card image-->
+
+            <mdb-card-body cascade="true" class="text-center">
+              <!--Card content-->
+              <h5 class="pink-text">
+                <mdb-icon fas icon="clinic-medical"></mdb-icon> Covid-19 Care</h5>
+              <!--Title-->
+              <h4 class="card-title">Covid-19</h4>
+              <!--Text-->
+
+              <mdb-card-text>
+                Corona Care is an initiative that is powered by multiple entities in the social sector that aims at easing pain during this crisis and We have onboarded world class technology partners.
+              </mdb-card-text>
+
+              <a mdbBtn color="unique" class="waves-light" mdbWavesEffect (click)="basicModal2.show()">More</a>
+
+            </mdb-card-body>
+            <!--/.Card content-->
+
+          </mdb-card>
+          <!--/.Card-->
+        </div>
+
+      </div>
+  </div>
+</section>
+<!--Inpatient  -->
+<div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title w-100" id="myModalLabel">Inpatient Care</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <span>
+                <b>Inpatient care</b> is the care of patients whose condition requires admission to a hospital. Progress in modern medicine and the advent of comprehensive out-patient clinics ensure[citation needed] that patients are only admitted to a hospital when they are extremely ill or have severe physical trauma.
+              </span>
+            </div>
+            <div class="col">
+              <img src="../../../assets/img/inpatient-care.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- outpatient -->
+<div mdbModal #basicModal1="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal1.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title w-100" id="myModalLabel">Outpatient Care</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <span>
+                <b>An outpatient department</b> or outpatient clinic is the part of a hospital designed for the treatment of outpatients, people with health problems who visit the hospital for diagnosis or treatment, but do not at this time require a bed or to be admitted for overnight care. Modern outpatient departments offer a wide range of treatment services, diagnostic tests and minor surgical procedures.
+              </span>
+            </div>
+            <div class="col">
+              <img src="../../../assets/img/outpatient-care.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal1.hide()" mdbWavesEffect>Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Corona -->
+<div mdbModal #basicModal2="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal2.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title w-100" id="myModalLabel">Covid-19 Care</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <span>
+                <b>Covid-19 Care</b> is an initiative that is powered by multiple entities in the social sector that aims at easing pain during this crisis.
+                We have onboarded world class technology partners and professionals to enable this cause . Our ever growing is aimed at something.              </span>
+            </div>
+            <div class="col">
+              <img src="../../../assets/img/Corona-Care.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal2.hide()" mdbWavesEffect>Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  -->
+<section class="depart" id="depart">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 depart-title-div">
+        <span class="depart-title">MEDICAL DEPARTMENTS</span>
+      </div>
+    </div>
+    <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
+  [animation]="'slide'">
+<mdb-carousel-item *ngFor="let item of slides; let i = index">
+<div class="col-md-4" *ngFor="let card of item; let cardIndex = index">
+<mdb-card class="my-1">
+<mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
+<mdb-card-body>
+<mdb-card-title>
+<h4>{{card.title}}</h4>
+</mdb-card-title>
+<p>{{card.description}}</p>
+<a href="#" mdbBtn color="primary" class="waves-light" mdbWavesEffect>{{card.buttonText}}</a>
+</mdb-card-body>
+</mdb-card>
+</div>
+</mdb-carousel-item>
+</mdb-carousel>
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-title">
+      <span>Feel Free To Contact With Our Community</span>
+    </div>
+    <div class="row">
+
+      <div class="col-md-6 col-sm-12">
+        <div>
+
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Your Report</label>
+              <textarea class="form-control" name="exampleInputPassword1" id="exampleInputPassword1" cols="30" rows="10" placeholder="Enter Your Report"></textarea>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
