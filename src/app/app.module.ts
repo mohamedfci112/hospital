@@ -10,10 +10,12 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { HomecontentComponent } from './components/homecontent/homecontent.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent}
+  {path: '', component: HomeComponent},
+  {path: 'about', component: AboutComponent}
 ];
 
 @NgModule({
@@ -22,7 +24,8 @@ const appRoutes: Routes = [
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    HomecontentComponent
+    HomecontentComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
